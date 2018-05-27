@@ -10,13 +10,17 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 public class User {
 	
 	private String name;
-	
+
+	//JSON中忽略不显示
 	@JsonIgnore
 	private String password;
 	private Integer age;
+
+	//日期格式调整
 	@JsonFormat(pattern="yyyy-MM-dd hh:mm:ss a", locale="zh", timezone="GMT+8")
 	private Date birthday;
-	
+
+	//忽略为空的
 	@JsonInclude(Include.NON_NULL)
 	private String desc;
 	

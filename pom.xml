@@ -72,7 +72,8 @@
 				之后依赖boot项目的项目如果想要使用devtools, 需要重新引入 -->
 			<optional>true</optional>
 		</dependency>
-		
+
+		<!--读取配置文件需要添加的依赖-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-configuration-processor</artifactId>
